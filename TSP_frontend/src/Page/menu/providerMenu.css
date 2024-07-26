@@ -1,0 +1,52 @@
+/* src/Page/menu/providerMenu.css */
+.container-providerMenu {
+    padding: 2rem;
+    background-color: #fbeaeb;
+    color: #2f3c7e;
+  }
+  
+  .container-providerMenu input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .container-providerMenu table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  .container-providerMenu table th,
+  .container-providerMenu table td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: left;
+  }
+  
+  .container-providerMenu table th {
+    background-color: #2f3c7e;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .container-providerMenu table tbody tr:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .container-providerMenu table td button {
+    padding: 0.5rem 1rem;
+    background-color: #2f3c7e;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .container-providerMenu table td button:hover {
+    background-color: #1f2c5e;
+  }
+  

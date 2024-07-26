@@ -1,0 +1,47 @@
+.logintoken {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#024950;
+  }
+  
+  .logintoken .avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #2F3C7E; /* Adjust this color if needed */
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .logintoken .dropdown {
+    display: none;
+    position: absolute;
+    top: 50px; /* Adjust this value if necessary */
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .logintoken .dropdown.active {
+    display: block;
+  }
+  
+  
+  .logintoken .dropdown-item {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .logintoken .dropdown-item:hover {
+    background-color: #f1f1f1;
+  }
+  

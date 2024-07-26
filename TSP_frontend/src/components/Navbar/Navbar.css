@@ -1,0 +1,120 @@
+.navbar {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:80px;   
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* .navbar .logo {
+    width: 150px;
+} */    
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px; /* Adjust the size as needed */
+    font-weight: bold;
+    color: #49557e;
+    font-family: 'Georgia', serif; /* Change the font family if desired */
+}
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: #49557e;
+    font-size: 18px;
+}
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 10px;
+    width:250px;
+    justify-content: end;
+}
+.navbar button {
+    background: transparent;
+    font-size: 16px;
+    border: 1px solid #04A4AF;
+    border-radius: 50px;
+    padding: 10px 30px;
+    color: #49557e;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.navbar button:hover {
+    background-color: #fff4f2;
+}
+.navbar .active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+}
+.navbar li {
+    cursor: pointer;
+}
+.navbar-search-icon {
+    position: relative;
+}
+.navbar-search-icon .dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: tomato;
+    border-radius: 50%;
+    top: -8px;
+    right: -8px;
+}
+
+/* .dropdown {
+    position: relative;
+}
+.dropdown-menu {
+    position: absolute;
+    margin-top: 10px;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    color:#024950;
+}
+.dropdown-menu div {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.dropdown-menu div:hover {
+    background-color: #f0f0f0;
+}
+ */
+ .dropdown {
+    position: relative;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    z-index: 1000;
+    color:#024950;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu div {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.dropdown-menu div:hover {
+    background-color: #f0f0f0;
+}

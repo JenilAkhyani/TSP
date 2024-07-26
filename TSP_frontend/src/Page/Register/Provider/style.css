@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+.pregister-container{
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.pregister-container .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+  color: #964734;
+}
+.pregister-container .title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #AFDDE5, #024950);
+}
+.pregister-container .content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+.pregister-container form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+.pregister-container form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color:#003135;
+}
+.pregister-container .user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  background-color: white;
+  color:#003135;
+}
+.pregister-container .user-details .input-box textarea{
+    height: 45px;
+    width: calc(213%);
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    background-color: white;
+    color:#003135;
+  }
+  .pregister-container .user-details .input-box textarea::placeholder{
+    color:#003135;
+}
+.pregister-container .user-details .input-box input::placeholder{
+    color:#003135;
+}
+.pregister-container .user-details .input-box textarea:focus,
+.pregister-container .user-details .input-box textarea:valid{
+  border-color: #199ba2;
+  background-color: #fff;
+}
+.pregister-container .user-details .input-box input:focus,
+.pregister-container .user-details .input-box input:valid{
+  border-color: #199ba2;
+  background-color: #fff;
+}
+
+.pregister-container form .button{
+   height: 45px;
+   margin: 35px 0
+ }
+ .pregister-container form .button input{
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: linear-gradient(135deg, #AFDDE5, #024950);
+ }
+ .pregister-container form .button input:hover{
+  /* transform: scale(0.99); */
+  background: linear-gradient(-135deg, #AFDDE5, #024950);
+  }
+ @media(max-width: 584px){
+  .pregister-container{
+  max-width: 100%;
+}
+.pregister-container form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .pregister-container form .category{
+    width: 100%;
+  }
+  .pregister-container .content form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .pregister-container .user-details::-webkit-scrollbar{
+    width: 5px;
+  }
+  }
+  @media(max-width: 459px){
+    .pregister-container  .content .category{
+    flex-direction: column;
+  }
+}
